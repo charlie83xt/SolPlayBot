@@ -6,8 +6,8 @@ import time
 from telegram.error import TelegramError
 
 # Replace with our bot token and chat ID
-BOT_TOKEN = 'TOKEN_BOT'
-CHAT_ID = 'CHAT_ID'
+BOT_TOKEN = '7885758642:AAFaEFeZrh4mz0H-yickQP0ZTtcKTPKbkA8'
+CHAT_ID = '-1002399011647'
 IMAGES_PATH = 'images/'
 HIDE_PATH = 'images/'
 
