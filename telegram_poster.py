@@ -17,9 +17,10 @@ def telegrampost(media, photocaption):
     try:
         bot.send_photo(chat_id=CHAT_ID, photo=open(media, 'rb'),
         caption=photocaption)
-        print(f"Posted: {photocaption}")
+        # print(f"Posted: {photocaption}")
     except TelegramError as e:
-        print(f"Failed to post: {e}")
+        # print(f"Failed to post: {e}")
+        print(e)
 
 # Function to pick a random file
 def randomfile():
@@ -55,7 +56,7 @@ schedule.every().day.at("22:00").do(post_random_image)
 schedule.every().day.at("23:00").do(post_random_image)
 
 # Main loop
-while true:
+while True:
     schedule.run_pending()
     time.sleep(1)
 
